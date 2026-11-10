@@ -1,0 +1,22 @@
+:root { font-family: Inter, system-ui, sans-serif; color: #192538; background: #f3f6fa; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 1120px; margin: auto; padding: 32px 20px 80px; }
+header, .row { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+h1 { margin: 2px 0; font-size: 2rem; } h2 { font-size: 1.2rem; margin: 0 0 16px; } h3 { margin-top: 25px; }
+.eyebrow { font-size: .75rem; font-weight: 700; letter-spacing: .1em; color: #5262d7; }
+header p, .muted, small { color: #617084; }
+button { background: #4055ca; color: white; border: 0; border-radius: 8px; padding: 11px 16px; cursor: pointer; font-weight: 600; }
+button:hover { filter: brightness(.94); } button:disabled { opacity: .55; cursor: wait; }
+.secondary { background: #e9edff; color: #3044b8; }
+.card { background: white; border: 1px solid #e0e6ee; border-radius: 12px; padding: 20px; margin: 18px 0; box-shadow: 0 3px 12px #162c4610; }
+.metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; } .metrics .card, .columns .card { margin: 0; }
+.metrics p { margin: 0 0 8px; color: #617084; } .metric { display: block; font-size: 2rem; } small { display: block; margin-top: 5px; }
+.columns { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+ul { list-style: none; padding: 0; margin: 0; } li { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-top: 1px solid #eef1f5; overflow-wrap: anywhere; }
+.message { width: 100%; display: flex; justify-content: space-between; gap: 15px; text-align: left; color: #192538; background: white; border: 1px solid #e5eaf0; margin: 8px 0; }
+.preview { display: block; font-weight: 400; margin-top: 8px; color: #526174; }.thread { background: #f8fafc; border: 1px solid #e6eaf0; padding: 14px; margin-top: 12px; border-radius: 8px; }
+.preserve { white-space: pre-wrap; overflow-wrap: anywhere; }.summary { background: #eef2ff; padding: 14px; border-radius: 8px; }
+label { display: block; font-weight: 600; margin: 15px 0; } input, textarea { display: block; width: 100%; padding: 10px; margin-top: 6px; border: 1px solid #bac6d5; border-radius: 6px; font: inherit; } textarea { resize: vertical; }
+.security, .alert { padding: 12px; border-radius: 8px; background: #fff5d8; } .error { background: #ffebeb; color: #9d2929; } .success { background: #e6f8ed; color: #17653a; }
+@media (max-width: 650px) { header, .row { align-items: flex-start; flex-direction: column; } .metrics, .columns { grid-template-columns: 1fr; } }
